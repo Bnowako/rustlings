@@ -10,10 +10,17 @@
 // Write a function that calculates the price of an order of apples given
 // the quantity bought. No hints this time!
 
-// I AM NOT DONE
+const BASE_PRICE: u32 = 2;
+const DISCOUNT_PRICE: u32 = 1;
 
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(apples_count: u32) -> u32 {
+   if apples_count > 40 {
+       apples_count * DISCOUNT_PRICE
+   }  else {
+       apples_count * BASE_PRICE
+   }
+}
 
 // Don't modify this function!
 #[test]
